@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>asw</title>
+</head>
+<body>
+<p id ="demo">hrllghg</p>
+<button type="button" id="btn" onclick="hello"></button>
+<script>
+var myVar = 100;
+
+function SomeFunction() {
+
+    function WhoIsThis() {
+        var myVar = 200;
+
+        alert("myVar = " + myVar); // 200
+        alert("this.myVar = " + this.myVar); // 100
+    }
+
+    WhoIsThis(); 
+}
+
+SomeFunction();
+</script>
+</body>
+</html>
